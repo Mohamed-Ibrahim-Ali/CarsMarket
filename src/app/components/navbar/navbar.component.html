@@ -1,0 +1,26 @@
+<div class="header">
+  <div class="container">
+  <nav class="navbar navbar-expand-sm">
+      <a class="navbar-brand" href="#">Cars Market</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+          aria-expanded="false" aria-label="Toggle navigation"></button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                  <a class="nav-link" routerLink="/" routerLinkActive='active'>Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item" *ngIf = 'isUser'>
+                  <a class="nav-link"  routerLink="/cart" routerLinkActive='active'>Cart</a>
+              </li>
+            <li class="nav-item" *ngIf = '!isUser'>
+              <a class="nav-link"  routerLink="/login" routerLinkActive='active'>Log In</a>
+          </li>
+          <li class="nav-item" *ngIf = '!isUser'>
+            <a class="nav-link"  routerLink="/signin" routerLinkActive='active'>Sign up</a>
+        </li>
+        <button class="btn btn-danger" *ngIf = 'isUser' (click) = 'logout()'>Log Out</button>
+          </ul>
+      </div>
+   </nav>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+button{
+    background: #dc3545;
+    color: aliceblue;
+    font-size: 18px;
+}
+form{
+    text-align: center;
+}
+.sign{
+    color: #dc3545;
+    cursor: pointer;
+}
+@media (max-width: 766px) {
+    form{
+        width: 100% !important;
+    }
+}

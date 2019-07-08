@@ -1,0 +1,15 @@
+label{
+    color:#fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+input{
+    background: #fff;
+}
+option{
+    color: #dc3545;
+}
+form{
+    background: #999;
+    padding: 15px;
+}

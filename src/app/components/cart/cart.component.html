@@ -1,0 +1,25 @@
+<h2 class= "my-5">Welcome To Your Cart !</h2>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th> Kind </th>
+                    <th> price </th>
+                    <th> Amount </th>
+                    <th> Total </th>
+                    <th> Options</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor= 'let x of Cart; index as i'>
+                    <td>{{x.title}}</td>
+                    <td>{{x.price | currency}}</td>
+                    <td>{{x.amount}}</td>
+                    <td>{{(x.price * x.amount) | currency}}</td>
+                    <td>
+                        <button class="btn btn-primary mx-2" (click)= 'save()'>Save</button>
+                        <button class="btn btn-danger"(click)='delete(i)'>Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>

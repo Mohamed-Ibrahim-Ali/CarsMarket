@@ -1,0 +1,14 @@
+img{
+    height: 200px;
+}
+.product{
+    margin: 10px;
+    text-align: center;
+}
+button{
+    background: #dc3545;
+    color: aliceblue;
+}
+h4{
+    color: #488dc9;
+}
